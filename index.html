@@ -1,0 +1,151 @@
+<!--
+CB Tech - Create multiple modals on web page using single JS 
+ver video en:
+https://www.youtube.com/watch?v=Ifx85VUGQIY
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Modals on Web page</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+  <heading class="heading">
+    <div class="title">
+      <h1>Dos de mis pintores favoritos</h1>
+      <div class="underline"></div>
+    </div>
+  </heading>
+
+<main>
+  <!-- pintor 1 -->
+  <section class="obras1"> 
+    <div class="section-center">      
+      <article class="obras-item">
+        <img src="./img1/leonardo1.jpg" alt="item" class="photo" />
+        <div class="item-info">
+          <h4>Mona Lisa, Leonardo da Vinci</h4>
+          <p class="item-text">
+            Nació el 15-04-1452 en Italia, murió el 02-05-19 en Francia. Movimiento: Alto Renacimiento. Obras: 295
+          </p>
+          <button class = "modal-open" data-modal="modal1">¿Quieres ver otras?</button>
+          
+        </div>
+      </article>
+    </div>
+ </section>
+    
+<!-- Modal pintor 1 -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <div class="title">
+          <button class ="modal-open"><a href ="./obras1.html">¿Quieres ver más?</a></button>
+          <button class="link modal-close">Close Modal</button>
+          <h1>Leonardo - Otras Pinturas Famosas</h1>         
+        </div> 
+      
+        <div class="underline"></div>
+      </div>
+
+      <div class="section-center">    
+
+            <article class="obras-item">
+              <img src="./img1/leonardo2.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>The Virgin of the Rocks</h4></div>             
+            </article>
+
+            <article class="obras-item">
+              <img src="./img1/leonardo3.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>Self Portrait </h4></div>                              
+            </article>
+
+            <article class="obras-item">
+              <img src="./img1/leonardo4.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>The Lady with an Ermine</h4></div>                              
+            </article>
+
+            <article class="obras-item">
+              <img src="./img1/leonardo5.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>Madonna and the Child</h4></div>              
+            </article>
+        
+      </div>         
+    </div>
+        
+     
+
+  <!-- pintor 2 -->
+  <section class="obras2"> 
+    <div class="section-center">      
+      <article class="obras-item">
+        <img src="./img2/Picasso1.jpg" alt="item" class="photo" />
+        <div class="item-info">
+          <h4>Portrait of Dora Maar, Pablo Picasso</h4>
+          <p class="item-text">
+            Nació el 25-10-1881 en Málaga murió el 08-04-73 en Francia. Movimiento: Cubismo, Poimpresionismo, Neoclasicismo, Surrealismo. Obras: 1169
+          </p>
+          <button class = "modal-open" data-modal="modal2">¿Quieres ver otras?</button>
+          
+        </div>
+      </article>
+    </div>
+ </section>
+    
+<!-- Modal pintor 2 -->
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <div class="title">
+          <button class ="modal-open"><a href ="./obras2.html">¿Quieres ver más?</a></button>
+          <button class="link modal-close">Close Modal</button>
+          <h1>Picasso - Otras Pinturas Famosas</h1>         
+        </div>       
+        <div class="underline"></div>
+      </div>
+
+      <div class="section-center">    
+
+            <article class="obras-item">
+              <img src="./img2/picasso2.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>The Maddona of the Carnation</h4></div>             
+            </article>
+
+            <article class="obras-item">
+              <img src="./img2/picasso3.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>The Last Supper</h4></div>                              
+            </article>
+
+            <article class="obras-item">
+              <img src="./img2/picasso4.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>The Lady with an Ermine</h4></div>                              
+            </article>
+
+            <article class="obras-item">
+              <img src="./img2/picasso5.jpg" alt="item" class="photo" />
+              <div class="item-info"><h4>Madonna and the Child</h4></div>              
+            </article>
+        
+      </div>         
+    </div>
+
+</main>
+<script src="ModalMultiple.js"></script>
+    <!--script src="ModalMultiple1.js"></script>
+    <script src="ModalMultiple2.js"></script-->
+
+</body>
+</html>
